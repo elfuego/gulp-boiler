@@ -1,0 +1,10 @@
+*.bbprojectd/
+*.idea
+*.iws
+*.ipr
+*.iml
+*.sublime-project
+*.sublime-workspace
+# frontend stuff
+node_modules/*
+public/*
