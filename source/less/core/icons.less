@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "icon-webfont";
+    src: url('../icons/icon-webfont.eot');
+    src: url('../icons/icon-webfont.eot?#iefix') format('eot'),
+        url('../icons/icon-webfont.woff2') format('woff2'),
+        url('../icons/icon-webfont.woff') format('woff'),
+        url('../icons/icon-webfont.ttf') format('truetype'),
+        url('../icons/icon-webfont.svg#icon-webfont') format('svg');
+}
+
+[class^="icon-"],
+[class*=" icon-"],
+.icon-base-pseudo {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "icon-webfont";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.icon-char(@filename) {
+    @close: "\E001";
+    
+    content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+    @pseudo-selector: ~":@{insert}";
+
+    &@{pseudo-selector} {
+        &:extend(.icon-base-pseudo);
+        .icon-char(@filename);
+    }
+}
+
+//
+// Icons
+//
+
+.icon-close:before {
+    content: "\E001";
+}
+

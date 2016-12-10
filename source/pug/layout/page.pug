@@ -1,0 +1,42 @@
+//- Load mixins
+//-include modules/mixins
+
+//- Load variables
+block variables
+    - var title = title ? ( title + " - Boiler" ) : "Boiler";
+    - var bodyClass = bodyClass || "";
+
+doctype html
+html( lang="en" )
+    head
+        meta( charset="utf-8" )
+        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+
+        title=title
+
+        link( rel="icon" href="/favicon.png" )
+        link( rel="shortcut icon" href="/favicon.ico" )
+        link( rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" )
+
+        meta( name="viewport" content="width=device-width,initial-scale=1.0" )
+
+        link( href=config.paths.assets.css+"/styles.css" rel="stylesheet" type="text/css" )
+
+    body( class=bodyClass )
+        .page-layout
+            a#skip-link( href="#main" ) Skip to main content
+            header.page-layout__header
+                include header
+                include navigation
+
+            main#main.page-layout__main
+                .main-content( class=mainClass )
+                    block main
+
+            footer.page-layout__footer
+                include footer
+
+            .overlay( data-select-results )
+                include overlay
+            
+        script( src=config.paths.assets.js+"/main.js" )

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="64px" viewBox="0 0 63 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(3.000000, 3.000000)" stroke="#231F20" stroke-width="6">
+            <path d="M0.243,28.85 C0.243,13.194 12.934,0.503 28.59,0.503 C44.245,0.503 56.936,13.194 56.936,28.85 C56.936,44.505 44.246,57.196 28.59,57.196 C12.934,57.195 0.243,44.505 0.243,28.85 L0.243,28.85 Z" id="Shape" fill="#00C0C7"></path>
+            <path d="M5.875,11.375 C8.125,26.625 14.875,34.875 26.625,36.625 C38.034,38.324 44.625,37.4 56.936,27.625 M35.926,1.547 C22.875,8.625 17.625,26.125 16.625,30.625 C15.432,35.994 14.875,47.625 21.252,56.308 M35.926,1.547 C42.125,11.625 41.4,27.443 37.875,37.375 C35.125,45.125 30.625,51.125 21.252,56.308 M17.625,2.625 C18.875,9.375 23.273,15.2 30.625,17.303 C38.27,19.489 44.625,16.625 50.037,11.079" id="Shape"></path>
+        </g>
+    </g>
+</svg>
