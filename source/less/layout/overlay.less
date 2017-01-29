@@ -62,10 +62,10 @@
     h2 {
         margin: 6rem 0 0 0;
         color: white;
+        .font(small);
         font-family: @font-secondary;
         text-transform: uppercase;
         text-align: center;
-        font-size: @font-small;    	
     }
 
     .collections {
@@ -76,14 +76,14 @@
 
 		    	em {
 			        font-family: @font-secondary;
-		    		font-size: @font-small;
+    		        .font(small);
 		    		display: block;
 		    		margin: 0 0 1rem 0;
 		    		color: @color-primary;
 		    	}
 		    	h3 {
-		    		color: @color-grey--50;
-		    		font-size: @font-title-small;
+		    		.font(title-small);
+                    color: @color-grey--50;
 		    		font-weight: normal;
 
 		    	}
@@ -102,7 +102,7 @@
 		display: inline;
 		list-style: none;
 		font-family: @font-secondary;
-		font-size: @font-small;
+		.font(small);
 		a {
 			display: inline-block;
 			margin: 1rem 0.2rem;
@@ -130,8 +130,7 @@
 			li {
 				list-style: none;
 				display: inline;
-				font-size: @font-title-small;
-				line-height: @line-height--title-normal;
+				.font(title-small);
 				margin: 2rem;
 			}
 		}

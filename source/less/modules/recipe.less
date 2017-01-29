@@ -1,0 +1,60 @@
+.recipe {
+    
+    text-align: center;
+
+    .recipe-title {
+        text-align: center;
+        font-weight: 900;
+
+        margin: 4rem 0 0 0;
+    }
+
+    .recipe-intro {
+        .font(medium);
+        font-weight: 300;
+    }
+    .recipe-list {
+        .font(medium);
+        font-weight: 300;
+        text-align: left;
+        border-top: .1rem dashed black;
+        border-bottom: .1rem dashed black;
+        padding: 2rem 4rem;
+        margin: 1rem 0;
+    }
+
+    .recipe-smalltitle {
+        .font(title-extra-small);
+        font-weight: 900;
+    }
+
+    .recipe-steps {
+
+        li {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin: 2rem 0;
+
+            .recipe-stepnumber {
+                .font(large);
+                font-weight: 900;
+                background-color: @color-primary;
+                width: 4.2rem;
+                height: 4.2rem;
+                line-height: 3.2rem;
+                border-radius: 4.2rem;
+                border: .4rem solid black;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .recipe-tip {
+        border-top: .1rem dashed black;
+        padding: 2rem;
+        .font(medium);
+    }
+}

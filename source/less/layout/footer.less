@@ -3,12 +3,12 @@
     min-height: 8rem;
     background-color: @color-grey--20;
 	padding: 3rem 0;
-	font-family: @font-secondary;
-	text-transform: uppercase;
 
 	.footer-inner {
-		line-height: @line-height--medium;
-		font-size: @font-small;
+		
+		strong { 
+			.font(title-extra-small);
+		}
 
 		@media @screen-sm-max {
 			height: auto;
@@ -22,8 +22,8 @@
 		}
 
 		.footer__link {
+			.font(medium);
 			color: white;
-			font-size: @font-small;
 			text-decoration: none;
 			font-weight: 200;
 
