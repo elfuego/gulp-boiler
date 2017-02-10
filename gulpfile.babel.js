@@ -60,6 +60,11 @@ gulp.task('js-lint', taskJSLint);
 import taskJSPretty from './tasks/js-prettify';
 gulp.task('js-prettify', taskJSPretty);
 
+// es lint
+
+import taskESLint from './tasks/es-lint';
+gulp.task('es-lint', taskESLint);
+
 
 //
 // Default: Watch
