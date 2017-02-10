@@ -8,7 +8,7 @@ import del  from 'del';
 export default () => {
 
     return gulp.task('clean', function (callback) {
-        del(config.paths.test + '/*', callback);
+        del(config.paths.test + '/**/*', callback);
     });
 }
 
