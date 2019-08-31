@@ -47,7 +47,7 @@
   },
   "eslintConfig": {
     "parser": "babel-eslint",
-    "plugins": [  ],
+    "plugins": [],
     "extends": [
       "eslint:recommended"
     ],
